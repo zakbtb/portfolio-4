@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-nassim</title>
+    <link rel="stylesheet" href="asset/style/style.css">
+
+    <!--box icons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--remix icons link-->
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <!-- header dans mon header j'ai mie mon logo avev un lien qui permet de toujours revenire a l'acceuil 
+        et ma navbar qui me permetra de chager de page-->
+    <header class="header">
+        <a href="#" class="header__logo"><span>M</span>M</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">acceuil</a></li>
+
+                <li><a href="#about">à propos</a></li>
+
+                <li><a href="#services">services</a></li>
+
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- dans ma section hero je vais presenter l'entreprise je vais mettre 
+        les lien vers mes reseau ainsi qu'une image eb background -->
+    <section class="hero" id="home">
+        <div class="hero__left">
+            <div class="hero__info">
+                <h3>Bienvenue chez</h3>
+                <h1><span>Meca</span>Minute</h1>
+                <p>Reparation rapide a domicile auto ou moto, avec mecaminute il deviens plus facil d'entretenire son bolid</p>
+            </div>
+            <div class="hero__social">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+            <div class="hero__main-btn">
+                <a href="#" class="btn">contactez-moi</a>
+                <a href="#" class="btn-2">devis gratuit</a>
+            </div>
+        </div>
+        <img src="asset/image/iiu.png" alt="" class="hero__img">
+        
+    </section> 
+    <!-- dans ma section about je vais parler de mon expriance dans le domaine de la mecanique -->
+    <section class="about" id="about">
+        <div class="titre">
+            <h2><span>A</span> propos</h2>
+        </div>
+        <div class="about__me">
+            <img src="asset/image/Mecanicien-auto.jpg" alt="" class="about__img">
+            
+            <div class="about__me-info">
+                <div class="about__me-text" id="about">
+                <h2><span>Mecanique</span>, Caroserie, Vente vehicule</h2>
+            </div>
+                <p class="exp">
+                    Experience:
+                    <span>2 ans</span>
+                </p>
+    
+                <p class="exp">
+                    specialter:
+                    <span>scouter, voiture</span>
+                </p>
+    
+                <p class="exp">
+                    adress:
+                    <span>Montpellier, France</span>
+                </p>
+    
+                <p class="exp">
+                    email:
+                    <span>mecaminute@gmail.com</span>
+                </p>
+    
+                <p class="exp">
+                    phone:
+                    <span>0102030405</span>
+                </p>
+                <div class="hero__main-btn_2">
+                    <a href="#" class="btn-3">MON CV</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        </div>
+    </section>
+    <!---portfolio--->
+    <section class="portfolio" id="services">
+        <div class="titre">
+            <h2>Mes <span>services</span></h2>
+        </div>
+        <div class="portfolio__content">
+            <div class="portfolio__content--row">
+                <img src="asset/image/vidange.jpeg" alt="Website">
+                <div class="portfolio__content--row-info">
+                    <div class="portfolio__content--row-info-text">
+                        <h5>Vidange</h5>
+                    </div>
+                    <div class="portfolio__content--row-info-icon">
+                        <i class='bx bxs-car-mechanic'></i>
+                    </div>
+                </div>
+                <h4>Faite la vidange de vos vehicule</h4>
+            </div>
+
+            <div class="portfolio__content--row">
+                <img src="asset/image/plaquette.jpg" alt="Website">
+                <div class="portfolio__content--row-info">
+                    <div class="portfolio__content--row-info-text">
+                        <h5>Changement plaquette</h5>
+                    </div>
+                    <div class="portfolio__content--row-info-icon">
+                        <i class="ri-tools-line"></i>
+                    </div>
+                </div>
+                <h4>Changer vos plaquette de frein</h4>
+            </div>
+
+            <div class="portfolio__content--row">
+                <img src="asset/image/TFSI-R5.webp" alt="Website">
+                <div class="portfolio__content--row-info">
+                    <div class="portfolio__content--row-info-text">
+                        <h5>Revision</h5>
+                    </div>
+                    <div class="portfolio__content--row-info-icon">
+                        <i class="ri-hammer-line"></i>
+                    </div>
+                </div>
+                <h4>Revision complete voiture </h4>
+            </div>
+    </section>
+
+    <!---contact--->
+    <section class="contact" id="contact">
+        <div class="titre">
+            <h2>Me <span>contacter</span></h2>
+        </div>
+        <div class="contact__form">
+            <form action="">
+                <input type="text" placeholder="Votre prénom..." required>
+                <input type="email" placeholder="Address Email..." required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ecrivez votre message ici..."></textarea>
+                <input type="submit" name="" value="Send Message" class="contact__form--send-btn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__copyright">
+            <p>2024 Boutoub Zakarya, All Rights Reserved.</p>
+        </div>
+        <a href="#home" class="footer__scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
